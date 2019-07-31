@@ -30,6 +30,14 @@ Wheel is a command line util that orchestrates infrastructure as code, pipelines
 
 ## Setup and Build
 
+## Install dep, gingko and golint
+```
+brew install dep
+go get -u github.com/onsi/ginkgo/ginkgo
+go get -u golang.org/x/lint/golint
+```
+
+### Install dependencies
 ```
 make depend && make
 ```

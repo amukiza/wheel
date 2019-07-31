@@ -37,7 +37,7 @@ build/$(NAME)-%.zip: *.go
 
 # Installing build dependencies. You will need to run this once manually when you clone the repo
 depend:
-	go get -v $(DEPEND)
+	dep ensure
 
 clean:
 	rm -rf build .vendor/pkg
